@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Eletrônicos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <!-- Inicio do menu navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Loja</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>  
+            </ul>           
+          </div>
+        </div>
+    </nav>
+    <!-- Fim do menu -->
+    <header class="container mt-5">
+        <h1 class="titulo" >Loja de Eletrônicos</h1>
+    </header>
+    <main class="container mt-4">        
+        <section>
+            <h2>Produtos em Destaque</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                  <div class="card">
+                    <img src="img/teclado.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Teclado Gamer Mecanico Sem Fio RGB Attack Shark K86 com Tela Multimidia</h5>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto1">Veja mais detelhes...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <img src="img/mouse.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mouse Gamer Sem Fio Logitech G502 X LIGHTSPEED com Switch LIGHTFORCE, 13 Botões Programáveis, Sensor HERO 25K</h5>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto2">Veja mais detelhes...</a>
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <img src="img/headset.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Headset Gamer Sem Fio Logitech G733 7.1 Dolby Surround com Tecnologia Blue VO!CE, RGB LIGHTSYNC, Drivers de Áudio Avançados e Bateria Recarregável para PC e PlayStation - Preto</h5>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-primary">Veja mais detelhes...</a>
+                    </div>
+                  </div>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Modal do Produto 1 -->
+        <!-- Modal -->
+        <div class="modal fade" id="modalProduto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalProduto1Label">Teclado mecanico</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Marca: Attack Shark
+
+                4,4 de 5 estrelas    13 avaliações de clientes | R$ 423,50R$423,50 Em até 8x R$ 52,99 sem juros
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fim do primeiro modal -->
+        <div class="modal fade" id="modalProduto2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalProduto1Label">Teclado mecanico</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Compatível com PC/ macOS/ Windows - Branco 4,8 de 5 estrelas    377 avaliações de clientes | Pesquisar nesta página R$ 716,00 com 10 por cento de desconto-10% R$716,00 Em até 10x R$ 71,60 sem juros 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <section>
+          <h2>Formulario de Contato</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Colocar seu Email aqui.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <p>&copy; 2024 Loja de Eletrônicos criado por João Henrique de Andrade Gimenes</p>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
